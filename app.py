@@ -23,6 +23,13 @@ positive_dict= [word.strip() for line in fp.readlines() for word in line.split('
 
 
 
+@app.route("/")
+def welcome():
+
+    return "<h1>Welcome to the Twitter sentiments App</h1>"
+
+
+
 @app.route("/search/<query>/<count>")
 def search(query,count):
 

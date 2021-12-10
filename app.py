@@ -76,3 +76,8 @@ def correct_polarity():
         response = request.get_json()
         classify_tweet(response,"data/clean_labeled_tweets.csv")
         return json.dumps({"status" : "ok"})
+
+
+
+if __name__ == "__main__":
+  app.run()
